@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cashier
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/cashier
+    username: postgres
+    password: postgres
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  messages:
+    basename: messages
+    encoding: UTF-8
+
+logging:
+  level:
+    root: debug
